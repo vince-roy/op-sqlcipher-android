@@ -99,6 +99,13 @@ android {
             keyPassword 'android'
         }
     }
+    packagingOptions {
+        excludes = [
+            "**/libcrypto.so",
+            "META-INF/**/*"
+        ]
+         resources.excludes.add("META-INF/*")
+    }
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
