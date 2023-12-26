@@ -2,4 +2,4 @@ This repo was created to reproduce this (issue)[https://github.com/OP-Engineerin
 
 To reproduce the issue:
 1. Run `npm install`
-2. Run `npx expo run:android`
+2. Run `npx expo run:ios --no-build-cache --configuration Release`
